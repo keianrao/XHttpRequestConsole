@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="xhttprequestconsole.css"></link>
+
+    <div id="input">
+        <h2>Request</h2>
+
+        <section>
+            <div>
+                <label for="input-url">URL (including port)</label>
+                <input id="input-url" type="text" spellcheck=false></input>
+            </div>
+            <div>
+                <label for="input-query-string">Query string (optional)</label>
+                <input id="input-query-string" type="text" spellcheck=false></input>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <label for="input-request-mimetype">Mimetype</label>
+                <input id="input-request-mimetype" type="text" spellcheck=false></textarea>
+            </div>
+        </section>
+
+        <section>
+            <label for="input-request-body">Body</label>
+            <textarea id="input-request-body" spellcheck=false></textarea>
+        </section>
+
+        <section>
+            <button id="submit-button" disabled>Submit</button>
+        </section>
+    </div>
+
+    <div id="output">
+        <h2>Response</h2>
+        <section>
+            <label for="output-console">Console</label>
+            <textarea id="output-console" readonly></textarea>
+        </section>
+
+        <section>
+            <div>
+                <label for="output-response-code">HTTP code</label>
+                <input id="output-response-code" size=1 type="text" readonly></input>
+            </div>
+            <div>
+                <label for="output-response-mimetype">Body mimetype</label>
+                <input id="output-response-mimetype" size=4 type="text" readonly></input>
+            </div>
+        </section>
+
+        <section>
+            <label for="output-response-body">Body</label>
+            <textarea id="output-response-body" readonly></textarea>
+        </section>
+    </div>
+
+    <div id="bottom-panel">
+        <section>
+            <label for="scratchpad">Scratchpad</label>
+            <textarea id="scratchpad"></textarea>
+        </section>
+    </div>
+
+    <script src="xhttprequestconsole.js"></script>
+
+</html>

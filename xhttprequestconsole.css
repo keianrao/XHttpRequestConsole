@@ -1,0 +1,77 @@
+
+/*  Page rules  //  \\  //  \\  //  \\  //  \\  //  \\  */
+
+body {
+    margin: 0;
+}
+
+textarea {
+    font-size: inherit;
+}
+
+
+
+/*  Section rules   \\  //  \\  //  \\  //  \\  //  \\  */
+
+#input, #output, #bottom-panel {
+    border: 0.5vmin ridge #0002;
+    position: absolute;
+    padding: 2vh 2vw;
+}
+
+#input, #output {
+    height: calc(70vh - 4vh - 1vmin);
+    width: calc(50vw - 4vw - 1vmin);
+}
+#input {
+    left: 0vw;
+}
+#output {
+    left: 50vw;
+}
+
+#bottom-panel {
+    top: 70vh;
+    left: 0vw;
+    height: calc(30vh - 4vh - 1vmin);
+    width: calc(100vw - 4vw - 1vmin);
+}
+
+
+
+/*  Component rules     //  \\  //  \\  //  \\  //  \\  */
+
+section {
+    margin-bottom: 2vh;
+}
+
+section > div {
+    display: inline-block;
+}
+
+section label {
+    display: block;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+textarea {
+    width: calc(100% - 1vw);
+    resize: none;
+}
+
+textarea:not(#output-console) {
+    height: 20vh;
+}
+
+input, textarea {
+    border-width: 2px;
+    border-style: inset;
+}
+
+#output input, #output textarea {
+    background: none;
+}
+
