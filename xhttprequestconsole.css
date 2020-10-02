@@ -49,21 +49,12 @@ section > div {
     display: inline-block;
 }
 
-section label {
+section label:not(#input-request-method-label) {
     display: block;
 }
 
 h2 {
     margin-top: 0;
-}
-
-textarea {
-    width: calc(100% - 1vw);
-    resize: none;
-}
-
-textarea:not(#output-console) {
-    height: 20vh;
 }
 
 input, textarea {
@@ -75,3 +66,27 @@ input, textarea {
     background: none;
 }
 
+textarea {
+    resize: none;
+    width: calc(100% - 1vw);
+}
+
+#input-request-headers {
+    height: 8vh;
+}
+
+#input-request-body {
+    height: 12vh;
+}
+
+#output-console {
+    height: inherit;
+}
+
+#output-response-body {
+    height: 24vh;
+}
+
+#scratchpad {
+    height: 12vh;
+}

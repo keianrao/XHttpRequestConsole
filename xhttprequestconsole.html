@@ -20,18 +20,28 @@
         </section>
 
         <section>
-            <div>
-                <label for="input-request-mimetype">Mimetype</label>
-                <input id="input-request-mimetype" type="text" spellcheck=false></textarea>
-            </div>
+            <label for="input-request-headers">
+                Headers (<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2">canonical format</a>, newline sep.)
+            </label>
+            <textarea id="input-request-headers" spellcheck="false"></textarea>
         </section>
 
         <section>
-            <label for="input-request-body">Body</label>
+            <label style="display: inline-block;" for="input-request-body">Body</label>
             <textarea id="input-request-body" spellcheck=false></textarea>
         </section>
 
         <section>
+            <div>
+                <label for="input-request-method" id="input-request-method-label">HTTP method: </label>
+                <select id="input-request-method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="DELETE">DELETE</option>
+                    <option value="PATCH">PATCH</option>
+                </select>
+            </div>
             <button id="submit-button" disabled>Submit</button>
         </section>
     </div>
@@ -64,6 +74,10 @@
         <section>
             <label for="scratchpad">Scratchpad</label>
             <textarea id="scratchpad"></textarea>
+        </section>
+
+        <section>
+            <button id="scratchpad-url-encode-button" disabled>URL encode selected text in scratchpad</button>
         </section>
     </div>
 
